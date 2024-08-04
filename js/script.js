@@ -37,101 +37,107 @@ sizeOptions.forEach(option => {
 const names = {
     male: {
         fighter: {
-            small: ["Thorin", "Gimli", "Finn", "Goran"],
-            medium: ["Aragorn", "Boromir", "Eomer", "Alistair", "Caden"],
-            large: ["Thorin Oakenshield", "Boromir of Gondor", "Eomer of Rohan", "Alistair the Brave"]
+            small: ["Thorin", "Gimli", "Finn", "Goran", "Rurik", "Helm", "Borin", "Doran"],
+            medium: ["Aragorn", "Boromir", "Eomer", "Alistair", "Caden", "Gareth", "Eldric", "Haldor"],
+            large: ["ThorinOakenshield", "BoromirGondor", "EomerRohan", "AlistairBrave", "GarethValiant", "EldricStorm"]
         },
         barbarian: {
-            small: ["Korg", "Thok", "Gorr", "Ragnar"],
-            medium: ["Conan", "Drog", "Hrok", "Vik", "Klaus"],
-            large: ["Conan the Barbarian", "Ragnar the Fearless", "Korg the Mighty", "Drog the Destroyer"]
+            small: ["Korg", "Thok", "Gorr", "Ragnar", "Bram", "Hark", "Gron", "Drax"],
+            medium: ["Conan", "Drog", "Hrok", "Vik", "Klaus", "Orin", "Korr", "Rolf"],
+            large: ["ConanBarbarian", "RagnarFearless", "KorgMighty", "DrogDestroyer", "OrinFierce", "KorrUnyielding"]
         },
         rogue: {
-            small: ["Locke", "Bane", "Raven", "Drake"],
-            medium: ["Shadow", "Zephyr", "Elias", "Jax", "Roderick"],
-            large: ["Locke Shadowfoot", "Bane the Silent", "Raven Darkblade", "Drake Nightshade"]
+            small: ["Locke", "Bane", "Raven", "Drake", "Finn", "Jax", "Reed", "Kai"],
+            medium: ["Shadow", "Zephyr", "Elias", "Jax", "Roderick", "Dorian", "Kane", "Rourke"],
+            large: ["LockeShadow", "BaneSilent", "RavenDarkblade", "DrakeNightshade", "DorianBlack", "RourkeStealth"]
         },
         ranger: {
-            small: ["Legolas", "Archer", "Rowan", "Sylas"],
-            medium: ["Archer", "Hawkeye", "Robin", "Elven", "Thorne"],
-            large: ["Legolas Greenleaf", "Archer of the Woods", "Hawkeye the Sharpshooter", "Robin Hood"]
+            small: ["Legolas", "Archer", "Rowan", "Sylas", "Eldar", "Finn", "Kieran", "Thorn"],
+            medium: ["Archer", "Hawkeye", "Robin", "Elven", "Thorne", "Galen", "Aiden", "Rowan"],
+            large: ["LegolasGreen", "ArcherWoods", "HawkeyeSharp", "RobinHood", "GalenTracker", "AidenSwift"]
         },
         wizard: {
-            small: ["Gandalf", "Merlin", "Orin"],
-            medium: ["Radagast", "Saruman", "Elminster", "Albus"],
-            large: ["Gandalf the Grey", "Merlin the Enchanter", "Saruman the White", "Elminster Aumar"]
+            small: ["Gandalf", "Merlin", "Orin", "Alder", "Peregrin", "Balthazar", "Elric", "Dorian"],
+            medium: ["Radagast", "Saruman", "Elminster", "Albus", "Magnus", "Oswin", "Thaddeus", "Lorian"],
+            large: ["GandalfGrey", "MerlinEnchant", "SarumanWhite", "ElminsterAumar", "MagnusWise", "LorianMystic"]
         },
         cleric: {
-            small: ["Luther", "Jorah", "Tyr"],
-            medium: ["Mordecai", "Elara", "Helios", "Ronan"],
-            large: ["Mordecai the Wise", "Elara Lightbringer", "Helios the Just", "Ronan the Saint"]
+            small: ["Luther", "Jorah", "Tyr", "Gideon", "Eamon", "Rurik", "Doran", "Lucian"],
+            medium: ["Mordecai", "Elara", "Helios", "Ronan", "Silas", "Aldric", "Rafael", "Gareth"],
+            large: ["MordecaiWise", "ElaraLight", "HeliosJust", "RonanSaint", "AldricPure", "GarethHoly"]
         },
         bard: {
-            small: ["Lute", "Harper", "Lyric"],
-            medium: ["Minstrel", "Fiddler", "Cadence", "Sage"],
-            large: ["Lute the Melodic", "Harper of Legends", "Lyric the Bard", "Cadence the Enchanter"]
+            small: ["Lute", "Harper", "Lyric", "Merrin", "Fiddler", "Gale", "Talon", "Joran"],
+            medium: ["Minstrel", "Fiddler", "Cadence", "Sage", "Reed", "Lorien", "Talon", "Merrin"],
+            large: ["LuteMelodic", "HarperLegends", "LyricBard", "CadenceEnchant", "ReedHarmonious", "LorienLyric"]
         },
         warlock: {
-            small: ["Ravenloft", "Hexen", "Malthus"],
-            medium: ["Darkwood", "Shadowmancer", "Void", "Asmodeus"],
-            large: ["Ravenloft the Cursed", "Hexen Darkbinder", "Malthus the Malevolent", "Shadowmancer of the Void"]
+            small: ["Ravenloft", "Hexen", "Malthus", "Draven", "Nyx", "Orion", "Zephyr", "Kieran"],
+            medium: ["Darkwood", "Shadow", "Void", "Asmodeus", "Thorne", "Gideon", "Malachai", "Raven"],
+            large: ["RavenloftCurse", "HexenDark", "MalthusMalev", "ShadowVoid", "MalachaiWicked", "RavenEnigmatic"]
         },
         druid: {
-            small: ["Oak", "Fern", "Briar"],
-            medium: ["Willow", "Thorn", "Ash", "Bran"],
-            large: ["Oak the Ancient", "Willow the Wise", "Thorn of the Forest", "Ash the Protector"]
+            small: ["Oak", "Fern", "Briar", "Holly", "Elm", "Thorne", "Sage", "Reed"],
+            medium: ["Willow", "Thorn", "Ash", "Bran", "Linden", "Rowan", "Bran", "Sorrel"],
+            large: ["OakAncient", "WillowWise", "ThornForest", "AshProtector", "LindenGreen", "RowanGuardian"]
         }
     },
     female: {
         fighter: {
-            small: ["Arwen", "Asha", "Freya", "Niamh"],
-            medium: ["Brienne", "Éowyn", "Yara", "Sigrid", "Elara"],
-            large: ["Brienne of Tarth", "Éowyn Shieldmaiden", "Arwen Evenstar", "Freya the Fierce"]
+            small: ["Arwen", "Asha", "Freya", "Niamh", "Lyria", "Isla", "Eira", "Mara"],
+            medium: ["Brienne", "Éowyn", "Yara", "Sigrid", "Elara", "Fiona", "Seraphine", "Kara"],
+            large: ["BrienneTarth", "ÉowynShield", "ArwenEvenstar", "FreyaFierce", "SeraphineBrave", "KaraValiant"]
         },
         barbarian: {
-            small: ["Sable", "Kara", "Brynhildr"],
-            medium: ["Red Sonja", "Valeria", "Zula", "Atalanta"],
-            large: ["Red Sonja the Brave", "Valeria the Fierce", "Zula the Untamed", "Atalanta of the Wild"]
+            small: ["Sable", "Kara", "Brynhildr", "Runa", "Astrid", "Eira", "Lena", "Siri"],
+            medium: ["RedSonja", "Valeria", "Zula", "Atalanta", "Brunhild", "Gretchen", "Hilda", "Ursula"],
+            large: ["RedSonjaBrave", "ValeriaFierce", "ZulaUntamed", "AtalantaWild", "BrunhildBold", "GretchenFearless"]
         },
         rogue: {
-            small: ["Cat", "Nadia", "Sylvia"],
-            medium: ["Arya", "Lilith", "Shade", "Inara"],
-            large: ["Arya Stark", "Lilith the Shadow", "Shade the Silent", "Nadia of the Night"]
+            small: ["Cat", "Nadia", "Sylvia", "Lyra", "Jade", "Tess", "Vera", "Faye"],
+            medium: ["Arya", "Lilith", "Shade", "Inara", "Elara", "Nina", "Riven", "Maeve"],
+            large: ["AryaStark", "LilithShadow", "ShadeSilent", "NadiaNight", "ElaraCunning", "MaeveStealthy"]
         },
         ranger: {
-            small: ["Marian", "Hera", "Lyra"],
-            medium: ["Elaria", "Talia", "Shana", "Elowen"],
-            large: ["Marian the Brave", "Talia of the Forest", "Shana Swiftfoot", "Elowen the Wild"]
+            small: ["Marian", "Hera", "Lyra", "Diana", "Nyssa", "Eira", "Fiona", "Juna"],
+            medium: ["Elaria", "Talia", "Shana", "Elowen", "Kaela", "Iris", "Thalira", "Niamh"],
+            large: ["MarianBrave", "TaliaForest", "ShanaSwift", "ElowenWild", "IrisFearless", "ThaliraTracker"]
         },
         wizard: {
-            small: ["Morgana", "Eira", "Vivienne"],
-            medium: ["Circe", "Yennefer", "Melisandre", "Zatanna"],
-            large: ["Morgana Le Fay", "Yennefer of Vengerberg", "Melisandre the Red", "Circe the Enchantress"]
+            small: ["Morgana", "Eira", "Vivienne", "Luna", "Nyx", "Iris", "Zara", "Kiera"],
+            medium: ["Circe", "Yennefer", "Melisandre", "Zatanna", "Nerida", "Sylvia", "Thalia", "Juno"],
+            large: ["MorganaLeFay", "YenneferVenger", "MelisandreRed", "CirceEnchant", "NeridaWise", "JunoMystic"]
         },
         cleric: {
-            small: ["Amara", "Iona", "Diana"],
-            medium: ["Seraphina", "Elune", "Thalia", "Celeste"],
-            large: ["Seraphina the Divine", "Elune the Radiant", "Thalia the Holy", "Celeste the Pure"]
+            small: ["Amara", "Iona", "Diana", "Rhiannon", "Cleo", "Nadia", "Eira", "Seren"],
+            medium: ["Seraphina", "Elune", "Thalia", "Celeste", "Althea", "Liora", "Mara", "Elysia"],
+            large: ["SeraphinaDiv", "EluneRadiant", "ThaliaHoly", "CelestePure", "AltheaJust", "ElysiaBlessed"]
         },
         bard: {
-            small: ["Elira", "Mira", "Nadia"],
-            medium: ["Lyra", "Selene", "Calypso", "Juno"],
-            large: ["Elira the Enchanting", "Mira of the Melodies", "Nadia the Sweet", "Calypso the Bard"]
+            small: ["Elira", "Mira", "Nadia", "Lena", "Zara", "Tara", "Sela", "Mara"],
+            medium: ["Lyra", "Selene", "Calypso", "Juno", "Arielle", "Eira", "Elysia", "Thalia"],
+            large: ["EliraEnchant", "MiraMelodies", "NadiaSweet", "CalypsoBard", "ArielleHarmon", "ElysiaMelodious"]
         },
         warlock: {
-            small: ["Nyx", "Erelda", "Kiera"],
-            medium: ["Belladonna", "Morgause", "Lilith", "Hecate"],
-            large: ["Belladonna the Bewitched", "Morgause the Sorceress", "Lilith of the Shadows", "Hecate the Dark"]
+            small: ["Nyx", "Erelda", "Kiera", "Luna", "Mara", "Selene", "Vera", "Hera"],
+            medium: ["Belladonna", "Morgause", "Lilith", "Hecate", "Diana", "Eira", "Cassandra", "Morgana"],
+            large: ["BelladonnaBewitch", "MorgauseSorceress", "LilithShadows", "HecateDark", "CassandraEnigma", "MorganaWicked"]
         },
         druid: {
-            small: ["Fiona", "Sorrel", "Eira"],
-            medium: ["Luna", "Gaia", "Aria", "Thalia"],
-            large: ["Luna the Mystic", "Gaia the Green", "Aria of the Woods", "Thalia the Wise"]
+            small: ["Fiona", "Sorrel", "Eira", "Lia", "Nessa", "Branwen", "Luna", "Tara"],
+            medium: ["Luna", "Gaia", "Aria", "Thalia", "Sage", "Fae", "Nia", "Dara"],
+            large: ["LunaMystic", "GaiaGreen", "AriaWoods", "ThaliaWise", "FaeEnchanted", "NiaVerdant"]
         }
     }
 };
 
-const lastNames = ["Oakenshield", "Stormcrow", "Nightwalker", "Shadowbane", "Doombringer", "Lightbringer", "Darkweaver", "Fireheart", "Moonblade", "Dragonborn"];
+const lastNames = [
+    "Oakenshield", "Stormcrow", "Nightwalker", "Shadowbane", "Doombringer", 
+    "Lightbringer", "Darkweaver", "Fireheart", "Moonblade", "Dragonborn", 
+    "Silvermoon", "Ironclad", "Thunderstrike", "Steelheart", "Ravenshadow", 
+    "Wolfsbane", "Dawnblade", "Starfire", "Windrider", "Dragonflame"
+];
+
 
 function generateName() {
     const firstName = names[selectedGender][selectedClass][selectedSize][Math.floor(Math.random() * names[selectedGender][selectedClass][selectedSize].length)];
