@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+body {
+    font-family: 'Cinzel', serif;
+    background-image: url(images/background.webp);
+    background-size: cover;
+    background-position: center;
+    color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    cursor: url('images/custom-cursor.webp'), auto;
+}
+
+.container {
+    text-align: center;
+    background-color: #2b2b2b;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #e0e0e0;
+}
+
+.class-selector, .gender-selector, .size-selector {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.class-option, .gender-option, .size-option {
+    background-color: #343434;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    flex: 1 1 100px; /* Adjust flex-basis for responsive design */
+    max-width: 150px;
+}
+
+.class-option img, .size-option img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.class-option p, .gender-option, .size-option {
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #f5f5f5;
+}
+
+.class-option:hover, .class-option.selected, .gender-option:hover, .gender-option.selected, .size-option:hover, .size-option.selected {
+    background-color: #555555;
+}
+
+button {
+    background-color: #d9534f;
+    color: #f5f5f5;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #c9302c;
+}
+
+p {
+    font-size: 24px;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #e0e0e0;
+    background-color: #1e1e1e;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+#generatedName {
+    margin: 10px;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    .class-option, .gender-option, .size-option {
+        flex: 1 1 80px;
+    }
+
+    button {
+        width: 100%;
+        padding: 15px 0;
+    }
+
+    p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .class-option, .gender-option, .size-option {
+        flex: 1 1 60px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 18px;
+    }
+}

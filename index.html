@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark and Darker Name Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/favicon-removebg-preview.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <h1>Dark and Darker Name Generator</h1>
+        <div class="class-selector">
+            <div class="class-option" data-class="fighter">
+                <img src="images/Fighters.png" alt="Fighter">
+                <p>Fighter</p>
+            </div>
+            <div class="class-option" data-class="barbarian">
+                <img src="images/Barbarians.png" alt="Barbarian">
+                <p>Barbarian</p>
+            </div>
+            <div class="class-option" data-class="rogue">
+                <img src="images/Rogues.png" alt="Rogue">
+                <p>Rogue</p>
+            </div>
+            <div class="class-option" data-class="ranger">
+                <img src="images/Rangers.png" alt="Ranger">
+                <p>Ranger</p>
+            </div>
+            <div class="class-option" data-class="wizard">
+                <img src="images/Wizards.png" alt="Wizard">
+                <p>Wizard</p>
+            </div>
+            <div class="class-option" data-class="cleric">
+                <img src="images/Clerics.png" alt="Cleric">
+                <p>Cleric</p>
+            </div>
+            <div class="class-option" data-class="bard">
+                <img src="images/Bards.png" alt="Bard">
+                <p>Bard</p>
+            </div>
+            <div class="class-option" data-class="warlock">
+                <img src="images/Warlocks.png" alt="Warlock">
+                <p>Warlock</p>
+            </div>
+            <div class="class-option" data-class="druid">
+                <img src="images/Druids.png" alt="Druid">
+                <p>Druid</p>
+            </div>
+        </div>
+
+        <div class="gender-selector">
+            <button id="maleButton" class="gender-option selected" data-gender="male">Masculino</button>
+            <button id="femaleButton" class="gender-option" data-gender="female">Feminino</button>
+        </div>
+
+        <div class="size-selector">
+            <button id="smallSizeButton" class="size-option" data-size="small">Small</button>
+            <button id="mediumSizeButton" class="size-option selected" data-size="medium">Medium</button>
+            <button id="largeSizeButton" class="size-option" data-size="large">Large</button>
+        </div>
+
+        <button id="generateNameButton">Generate Name</button>
+        <p id="generatedName"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
