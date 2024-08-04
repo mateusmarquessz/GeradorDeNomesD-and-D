@@ -137,6 +137,13 @@ function generateName() {
     const firstName = names[selectedGender][selectedClass][selectedSize][Math.floor(Math.random() * names[selectedGender][selectedClass][selectedSize].length)];
     const lastName = lastNames[Math.floor(Math.random() * lastNames.length)];
 
-    const fullName = `${firstName} ${lastName}`;
+    let fullName = `${firstName}${lastName}`; // Concatenate without space
+    
+    // Truncate the full name if it exceeds 20 characters
+    if (fullName.length > 20) {
+        fullName = fullName.substring(0, 20);
+    }
+
     document.getElementById('generatedName').innerText = fullName;
 }
+
