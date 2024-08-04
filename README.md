@@ -1,6 +1,7 @@
 # Gerador de Nomes D&D
 
 Bem-vindo ao projeto **Gerador de Nomes D&D**! Este é um gerador de nomes para o jogo "Dark and Darker", desenvolvido para ajudar os jogadores a criar nomes de personagens de maneira rápida e fácil.
+Feito por um fan do jogo,
 
 ## Descrição
 
@@ -34,6 +35,6 @@ Se você deseja contribuir para o projeto, sinta-se à vontade para abrir um pul
 
 Este projeto está licenciado sob a Licença MIT - consulte o arquivo `LICENSE` para detalhes.
 
-## Links
-
-- [Repositório no GitHub](https://github.com/mateusmarquessz/GeradorDeNomesD-and-D)
+## Direito
+Este projeto utiliza imagen de direitos da produtora do jogo, link:
+- [Wiki Dark and Darker](https://darkanddarker.wiki.spellsandguns.com/Dark_and_Darker_Wiki)
